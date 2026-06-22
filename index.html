@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiaGard - Politique de Confidentialite</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; line-height: 1.6; color: #2D3748; }
+        h1 { color: #1A365D; border-bottom: 2px solid #1A365D; padding-bottom: 10px; }
+        h2 { color: #2B6CB0; margin-top: 30px; }
+        .update { color: #718096; font-style: italic; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 8px; }
+        .highlight { background: #EBF8FF; padding: 15px; border-radius: 8px; border-left: 4px solid #2B6CB0; margin: 20px 0; }
+        footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #E2E8F0; color: #718096; }
+    </style>
+</head>
+<body>
+
+<h1>Politique de Confidentialite - DiaGard</h1>
+<p class="update">Derniere mise a jour : 19 juin 2026</p>
+
+<div class="highlight">
+    <strong>En resume :</strong> DiaGard ne collecte, ne transmet et ne stocke aucune de vos donnees sur des serveurs externes. Toutes vos donnees medicales restent exclusivement sur votre appareil, chiffrees localement.
+</div>
+
+<h2>1. Editeur de l'application</h2>
+<p>DiaGard est editee par :</p>
+<ul>
+    <li><strong>Societe :</strong> NetVisionConnect</li>
+    <li><strong>Adresse :</strong> Bruxelles, Belgique</li>
+    <li><strong>Contact :</strong> agrebi.abdennaceur@gmail.com</li>
+</ul>
+
+<h2>2. Donnees collectees</h2>
+<p><strong>DiaGard ne collecte aucune donnee personnelle.</strong></p>
+<p>L'application fonctionne entierement hors ligne. Les informations que vous saisissez dans l'application (donnees medicales, mesures de glycemie, tension arterielle, ordonnances, fiches d'urgence, rendez-vous medicaux) sont :</p>
+<ul>
+    <li>Stockees uniquement sur votre appareil</li>
+    <li>Chiffrees avec l'algorithme AES-256</li>
+    <li>Protegees par l'authentification biometrique de votre appareil</li>
+    <li>Jamais transmises a des serveurs, des tiers ou a l'editeur</li>
+</ul>
+
+<h2>3. Stockage et chiffrement</h2>
+<p>DiaGard utilise un systeme de coffre-fort numerique local :</p>
+<ul>
+    <li><strong>Chiffrement :</strong> AES-256 via la bibliotheque Hive Flutter</li>
+    <li><strong>Cle de chiffrement :</strong> Generee localement et stockee dans le Keystore Android securise (flutter_secure_storage)</li>
+    <li><strong>Acces :</strong> Protege par l'authentification biometrique ou le code de verrouillage de votre appareil</li>
+</ul>
+
+<h2>4. Permissions utilisees</h2>
+<p>L'application demande les permissions suivantes, uniquement pour les fonctionnalites decrites :</p>
+<ul>
+    <li><strong>Camera :</strong> Scanner les codes-barres des ordonnances et cartes eID</li>
+    <li><strong>Biometrie :</strong> Deverrouiller l'acces au coffre-fort medical</li>
+    <li><strong>Notifications :</strong> Rappels de prise de medicaments et rendez-vous</li>
+    <li><strong>Stockage :</strong> Export PDF des rapports medicaux et fiches d'urgence</li>
+</ul>
+<p>Aucune permission n'est utilisee pour collecter ou transmettre des donnees.</p>
+
+<h2>5. Numero de registre national (eID belge)</h2>
+<p>Lors de la lecture d'une carte d'identite electronique (eID) belge, DiaGard peut lire le numero de registre national figurant sur le code-barres de la carte. Ce numero est :</p>
+<ul>
+    <li>Stocke uniquement sur votre appareil, dans le coffre-fort chiffre AES-256</li>
+    <li>Jamais transmis a l'editeur, a des tiers ou a des serveurs distants</li>
+    <li>Utilise exclusivement a des fins d'identification locale dans l'application</li>
+</ul>
+<p>Conformement a la loi belge du 8 aout 1983, l'utilisation du numero de registre national est limitee a l'identification dans une application informatique et ne fait l'objet d'aucune transmission.</p>
+
+<h2>6. Partage de donnees</h2>
+<p><strong>DiaGard ne partage aucune donnee automatiquement.</strong></p>
+<p>La fonction "Partage Medecin" vous permet de generer un rapport PDF et de le partager manuellement via les applications de votre choix (email, messagerie). Ce partage est initie exclusivement par vous et l'application n'a aucune connaissance du destinataire.</p>
+
+<h2>7. Services tiers</h2>
+<p>DiaGard n'integre aucun service tiers de collecte de donnees :</p>
+<ul>
+    <li>Pas de trackers ni d'outils d'analyse (analytics)</li>
+    <li>Pas de publicites tierces</li>
+    <li>Pas de SDK de reseaux sociaux</li>
+    <li>Pas de connexion a des serveurs distants</li>
+</ul>
+
+<h2>8. Donnees des enfants</h2>
+<p>DiaGard permet de gerer les donnees medicales des membres de la famille, y compris des enfants. Ces donnees sont soumises aux memes protections que toutes les autres donnees : chiffrement local, aucune transmission, aucune collecte.</p>
+
+<h2>9. Conservation et suppression des donnees</h2>
+<p>Vos donnees sont conservees sur votre appareil tant que l'application est installee. Pour supprimer definitivement toutes vos donnees :</p>
+<ul>
+    <li>Desinstallez l'application, ou</li>
+    <li>Effacez les donnees de l'application dans les parametres Android</li>
+</ul>
+<p>La desinstallation supprime irrevocablement toutes les donnees chiffrees. Il n'existe aucune copie sur un serveur distant.</p>
+
+<h2>10. Vos droits (RGPD)</h2>
+<p>Conformement au Reglement General sur la Protection des Donnees (RGPD) :</p>
+<ul>
+    <li><strong>Droit d'acces :</strong> Toutes vos donnees sont directement accessibles dans l'application</li>
+    <li><strong>Droit de rectification :</strong> Vous pouvez modifier vos donnees a tout moment dans l'application</li>
+    <li><strong>Droit a l'effacement :</strong> Desinstallez l'application pour supprimer toutes les donnees</li>
+    <li><strong>Droit a la portabilite :</strong> La fonction d'export PDF vous permet d'extraire vos donnees</li>
+</ul>
+<p>Etant donne qu'aucune donnee n'est collectee par l'editeur, la plupart des droits RGPD sont automatiquement satisfaits.</p>
+
+<h2>11. Securite</h2>
+<p>DiaGard met en oeuvre les mesures de securite suivantes :</p>
+<ul>
+    <li>Chiffrement AES-256 de toutes les donnees medicales</li>
+    <li>Cle de chiffrement stockee dans le Keystore materiel Android</li>
+    <li>Authentification biometrique obligatoire au demarrage</li>
+    <li>Aucune connexion reseau, aucune surface d'attaque distante</li>
+</ul>
+
+<h2>12. Avertissement</h2>
+<div class="highlight">
+    <strong>DiaGard est un outil de suivi personnel</strong> et ne constitue pas un dispositif medical. L'application ne diagnostique, ne traite, ne guerit et ne previent aucune condition medicale.
+</div>
+<p>Les donnees affichees dans l'application sont fournies a titre informatif uniquement et ne constituent en aucun cas :</p>
+<ul>
+    <li>Un diagnostic medical</li>
+    <li>Un traitement ou une recommandation therapeutique</li>
+    <li>Un avis medical ou paramedical</li>
+    <li>Un substitut a une consultation avec un professionnel de sante qualifie</li>
+</ul>
+<p>Consultez toujours votre medecin ou un professionnel de sante qualifie pour toute question relative a votre etat de sante.</p>
+
+<h2>13. Modifications de cette politique</h2>
+<p>Toute modification de cette politique de confidentialite sera publiee sur cette page avec une date de mise a jour. Les modifications importantes seront signalees dans les notes de mise a jour de l'application sur le Google Play Store.</p>
+
+<h2>14. Contact</h2>
+<p>Pour toute question concernant cette politique de confidentialite ou vos donnees :</p>
+<ul>
+    <li><strong>Email :</strong> agrebi.abdennaceur@gmail.com</li>
+    <li><strong>Editeur :</strong> NetVisionConnect, Bruxelles, Belgique</li>
+</ul>
+
+<footer>
+    <p>&copy; 2026 NetVisionConnect - DiaGard. Tous droits reserves.</p>
+    <p style="font-size: 12px; margin-top: 10px;">DiaGard est un outil de suivi personnel et ne remplace pas l'avis d'un professionnel de sante.</p>
+</footer>
+
+</body>
+</html>
